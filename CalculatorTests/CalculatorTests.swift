@@ -35,13 +35,25 @@ class CalculatorTests: XCTestCase {
     
     func test3Plus5Equals8() {
         let cal = Calculator()
-        XCTAssertEqual(cal.calculate(3, oprand_right: 5, oprator: "+"), 8, "3 plus 5 should be 8")
+        XCTAssertEqual(cal.calculate(3, oprand_right: 5, _operator: "+"), 8, "3 plus 5 should be 8")
     }
     
     func test4Plus5Equals9() {
         let cal = Calculator()
-        XCTAssertEqual(cal.calculate(4, oprand_right: 5, oprator: "+"), 9, "4 plus 5 should be 9")
+        XCTAssertEqual(cal.calculate(4, oprand_right: 5, _operator: "+"), 9, "4 plus 5 should be 9")
     }
+    
+    func test5Minus4Equals1() {
+        let cal = Calculator()
+        XCTAssertEqual(cal.calculate(5, oprand_right: 4, _operator: "-"), 1, "5 minus 4 should equal 1")
+    }
+    
+    
+    func test5Minus6EqualsMinus1() {
+        let cal = Calculator()
+        XCTAssertEqual(cal.calculate(5, oprand_right: 6, _operator: "-"), -1, "5 minus 6 should equal -1")
+    }
+    
     
 
 }

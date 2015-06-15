@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var _operator = ""
 
     @IBOutlet weak var result: UILabel!
     override func viewDidLoad() {
@@ -22,7 +23,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func click(sender: UIButton, forEvent event: UIEvent) {
-
     }
     
 
