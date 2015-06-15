@@ -54,6 +54,31 @@ class CalculatorTests: XCTestCase {
         XCTAssertEqual(cal.calculate(5, oprand_right: 6, _operator: "-"), -1, "5 minus 6 should equal -1")
     }
     
+    func test3Multiply5Equals15() {
+        let cal = Calculator()
+        XCTAssertEqual(cal.calculate(3, oprand_right: 5, _operator: "x"), 15, "3 multiply 5 should equal 15")
+    }
     
-
+    func test3Multiply0Equals0() {
+        let cal = Calculator()
+        XCTAssertEqual(cal.calculate(3, oprand_right: 0, _operator: "x"), 0, "3 multiply 0 should equal 0")
+    }
+    
+    func test3MultiplyMinus5EqualsMinus15() {
+        let cal = Calculator()
+        XCTAssertEqual(cal.calculate(3, oprand_right: -5, _operator: "x"), -15, "3 multiply -5 should equal -15")
+    }
+    
+    func test6Divide3Equals2() {
+        let cal = Calculator()
+        XCTAssertEqual(cal.calculate(6, oprand_right: 3, _operator: "/"), 2, "6 multiply 3 should equal 2")
+    }
+    
+    func test6Divide0ShouldThrowException() {
+        let cal = Calculator()
+//        XCTFail("error")
+//        XCTAssertEqual(cal.calculate(6, oprand_right: 0, _operator: "/"), 2, "6 multiply 0 should be error")
+    }
+    
+    
 }
