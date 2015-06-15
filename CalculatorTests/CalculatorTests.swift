@@ -21,16 +21,23 @@ class CalculatorTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+//    func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
+//        XCTAssert(true, "Pass")
+//    }
     
-    func testPerformanceExample() {
+//    func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+//        self.measureBlock() {
             // Put the code you want to measure the time of here.
-        }
+//        }
+//    }
+    
+    func test3Plus5Equals8() {
+        let cal = Calculator()
+        XCTAssertEqual(cal.calculate(3, oprand_right: 5, oprator: "+"), 8, "3 plus should be 8")
     }
     
+    
+
 }
