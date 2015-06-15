@@ -14,7 +14,7 @@ class Calculator {
     }
     
     func calculate(oprand_left: Int, oprand_right: Int, oprator: String) -> Int {
-        return 8;
+        return oprand_left + oprand_right;
     }
     
 }

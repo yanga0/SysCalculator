@@ -13,7 +13,7 @@ class CalculatorTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
     }
     
     override func tearDown() {
@@ -35,9 +35,13 @@ class CalculatorTests: XCTestCase {
     
     func test3Plus5Equals8() {
         let cal = Calculator()
-        XCTAssertEqual(cal.calculate(3, oprand_right: 5, oprator: "+"), 8, "3 plus should be 8")
+        XCTAssertEqual(cal.calculate(3, oprand_right: 5, oprator: "+"), 8, "3 plus 5 should be 8")
     }
     
+    func test4Plus5Equals9() {
+        let cal = Calculator()
+        XCTAssertEqual(cal.calculate(4, oprand_right: 5, oprator: "+"), 9, "4 plus 5 should be 9")
+    }
     
 
 }
